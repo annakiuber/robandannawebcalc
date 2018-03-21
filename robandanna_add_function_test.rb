@@ -27,19 +27,31 @@ class Addcalctest < Minitest::Test
 		assert_equal(3,subtract(10,7))
 	end
 
-	def testsubtract8_16_equals8
+	def test_subtract8_16_equals8
 		assert_equal(8,subtract(16,8))
 	end
 
-	def testmultiply8_8_equals64
+	def test_multiply8_8_equals64
 		assert_equal(64, multiply(8,8))
 	end
 
-	def testmultiply2_8_equals16
+	def test_multiply2_8_equals16
 		assert_equal(16, multiply(2,8))
 	end
 
-	def testmultiply4_4_equals16
+	def test_multiply4_4_equals16
 		assert_equal(16, multiply(4,4))
+	end
+
+	def test_divide4_by_2_equals2
+		assert_equal(2, divide(4,2))
+	end
+
+	def test_divide5_by_2_equals2point5
+		assert_equal(2.5, divide(5.0,2))
+	end
+
+	def test_divide7_by_2_equals3point5
+		assert_equal(3.5, divide(7,2))
 	end
 end
